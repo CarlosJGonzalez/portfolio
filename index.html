@@ -6,25 +6,25 @@
     <title>Carlos Gonzalez | Full Stack & AI Developer</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/hero.css">  
 </head>
 <body class="bg-gray-50 text-gray-900 font-sans">
 
     <!-- Navigation -->
     <nav class="bg-white shadow-sm sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-            <h1 class="text-xl font-bold text-blue-600">
-                <a href="./">Carlos Gonzalez</a>
-            </h1>
             
             <!-- Desktop Menu (Hidden on Mobile) -->
             <div class="hidden md:flex space-x-6 items-center">
-                <a href="#about" class="text-blue-600 px-3 py-1 rounded hover:bg-blue-100 transition font-semibold text-sm">About</a>
-                <a href="#skills" class="text-blue-600 px-3 py-1 rounded hover:bg-blue-100 transition font-semibold text-sm">Skills</a>
-                <a href="#projects" class="text-blue-600 px-3 py-1 rounded hover:bg-blue-100 transition font-semibold text-sm">Projects</a>
-                <a href="architect" class="text-blue-600 px-3 py-1 rounded hover:bg-blue-100 transition font-semibold text-sm">
+                <a href="./" class="text-blue-600 px-3 py-1 rounded hover:bg-blue-100 transition font-semibold text-xl">Home</a>
+                <a href="#about" class="text-blue-600 px-3 py-1 rounded hover:bg-blue-100 transition font-semibold text-xl">About</a>
+                <a href="#skills" class="text-blue-600 px-3 py-1 rounded hover:bg-blue-100 transition font-semibold text-xl">Skills</a>
+                <a href="#projects" class="text-blue-600 px-3 py-1 rounded hover:bg-blue-100 transition font-semibold text-xl">Projects</a>
+                <a href="case-study" class="text-blue-600 px-3 py-1 rounded hover:bg-blue-100 transition font-semibold text-xl">Case Study</a>
+                <a href="architect" class="text-blue-600 px-3 py-1 rounded hover:bg-blue-100 transition font-semibold text-xl">
                     Cloud Architect
                 </a>
-                <a href="solutions" class="text-blue-600 px-3 py-1 rounded hover:bg-blue-100 transition font-semibold text-sm">
+                <a href="solutions" class="text-blue-600 px-3 py-1 rounded hover:bg-blue-100 transition font-semibold text-xl">
                     Solutions
                 </a>                
             </div>
@@ -39,22 +39,31 @@
 
         <!-- Mobile Menu Dropdown (Hidden by Default) -->
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 px-4 py-4 space-y-4 shadow-lg">
-            <a href="#about" class="block text-blue-600 px-3 py-1 rounded hover:bg-blue-100 transition font-semibold text-sm font-medium">About</a>
-            <a href="#skills" class="block text-blue-600 px-3 py-1 rounded hover:bg-blue-100 transition font-semibold text-sm font-medium">Skills</a>
-            <a href="#projects" class="block text-blue-600 px-3 py-1 rounded hover:bg-blue-100 transition font-semibold text-sm font-medium">Projects</a>
-            <a href="architect" class="block text-blue-600 px-3 py-1 rounded hover:bg-blue-100 transition font-semibold text-sm font-medium">
+            <a href="./" class="block text-blue-600 px-3 py-1 rounded hover:bg-blue-100 transition font-semibold text-xl font-medium">Home</a>
+            <a href="#about" class="block text-blue-600 px-3 py-1 rounded hover:bg-blue-100 transition font-semibold text-xl font-medium">About</a>
+            <a href="#skills" class="block text-blue-600 px-3 py-1 rounded hover:bg-blue-100 transition font-semibold text-xl font-medium">Skills</a>
+            <a href="#projects" class="block text-blue-600 px-3 py-1 rounded hover:bg-blue-100 transition font-semibold text-xl font-medium">Projects</a>       
+            <a href="case-study" class="block text-blue-600 px-3 py-1 rounded hover:bg-blue-100 transition font-semibold text-xl font-medium">Case Study</a>  
+            <a href="architect" class="block text-blue-600 px-3 py-1 rounded hover:bg-blue-100 transition font-semibold text-xl font-medium">
                 Cloud Architect
             </a>
-            <a href="solutions" class="block text-blue-600 px-3 py-1 rounded hover:bg-blue-100 transition font-semibold text-sm font-medium">
+            <a href="solutions" class="block text-blue-600 px-3 py-1 rounded hover:bg-blue-100 transition font-semibold text-xl font-medium">
                 Solutions
             </a>            
         </div>
     </nav>
-
+    <section class="hero" id="about">
+        <div class="hero-banner">
+            <img src="/assets/hero-banner.jpg" alt="Programming code on screen" width="1920" height="512">
+        </div>
+        <div class="hero-content">
+        <h1 class="hero-title">Carlos Gonzalez</h1>
+        <p class="hero-subtitle">Full Stack &amp; AI Developer</p>
+        </div>
+    </section>
     <!-- Hero Section -->
-    <header id="about" class="bg-white border-b">
-        <div class="max-w-6xl mx-auto px-4 py-20 text-center">
-            <h2 class="text-4xl md:text-5xl font-extrabold mb-4">Full Stack & AI Developer</h2>
+    <header class="bg-white border-b">
+        <div class="max-w-6xl mx-auto px-4 text-center">
             <p class="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
                 <!-- Results-driven developer with extensive experience in PHP, JavaScript frameworks, and Cloud technologies (AWS, Azure). 
                 Expert in leveraging technical solutions to solve business challenges. -->
@@ -107,7 +116,7 @@ No matter how tense a situation, Carlos made sure everyone left with a smile. An
                 <div class="modal-content" onclick="event.stopPropagation()">
                     <span class="close-btn" onclick="closeModal()">&times;</span>
                     <div class="modal-header">
-                        <img id="modalPhoto" src="https://via.placeholder.com/80" class="card-photo">
+                        <img id="modalPhoto" src="" class="card-photo">
                         <div>
                             <h3 id="modalName" class="read-more-link">Name</h3>
                             <p id="modalRole">Role</p>
@@ -125,19 +134,17 @@ No matter how tense a situation, Carlos made sure everyone left with a smile. An
         <div class="max-w-6xl mx-auto px-4">
             <h3 class="text-3xl font-bold mb-12 text-center">Technical Portfolio</h3>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                
-                <!-- T-World Locations Architecture -->
+                <!-- website built using Lovable.com -->
                 <div class="border rounded-xl overflow-hidden hover:shadow-lg transition">
                     <div class="p-6">
                         <div class="flex justify-between items-start mb-2">
-                            <h4 class="text-xl font-bold">T-World Locations Architecture</h4>
-                            <span class="bg-green-100 text-green-800 text-xs font-bold px-2 py-1 rounded">PHP Generators</span>
+                            <h4 class="text-xl font-bold">Website</h4>
+                            <span class="bg-yellow-100 text-yellow-800 text-xs font-bold px-2 py-1 rounded">Vibe Coding</span>
                         </div>
-                        <p class="text-gray-600 mb-4">Developed an efficient system using nested PHP Generators to display territories and offices dynamically.</p>
-                        <a href="https://www.tworld.com/locations" target="_blank" class="text-blue-600 font-semibold hover:underline">View Locations Map →</a>
+                        <p class="text-gray-600 mb-4">This protoype React-based Condo Management System is a comprehensive administrative solution designed to streamline residential operations and financial transparency. By centralizing core functions like automated ledger tracking, expense management, and vendor/provider databases, the application simplifies complex accounting workflows into a high-performance, responsive interface.</p>
+                        <a href="https://condo.myrecp.com" target="_blank" class="text-blue-600 font-semibold">View Website →</a>
                     </div>
-                </div>
-
+                </div>                
                 <!-- Computer Vision Project -->
                 <div class="border rounded-xl overflow-hidden hover:shadow-lg transition">
                     <div class="p-6">
@@ -202,21 +209,21 @@ No matter how tense a situation, Carlos made sure everyone left with a smile. An
                     <div class="p-6">
                         <div class="flex justify-between items-start mb-2">
                             <h4 class="text-xl font-bold">Website</h4>
-                            <span class="bg-yellow-100 text-yellow-800 text-xs font-bold px-2 py-1 rounded">Lovable AI</span>
+                            <span class="bg-yellow-100 text-yellow-800 text-xs font-bold px-2 py-1 rounded">Vibe Coding</span>
                         </div>
                         <p class="text-gray-600 mb-4">Full-scale development and e-commerce integration for a premier artisanal empanada restaurant. Features include a custom online ordering system.</p>
                         <a href="https://parguitog.com" target="_blank" class="text-blue-600 font-semibold">View Website →</a>
                     </div>
                 </div>
-                <!-- website built using Lovable.com -->
+                <!-- T-World Locations Architecture -->
                 <div class="border rounded-xl overflow-hidden hover:shadow-lg transition">
                     <div class="p-6">
                         <div class="flex justify-between items-start mb-2">
-                            <h4 class="text-xl font-bold">Website</h4>
-                            <span class="bg-yellow-100 text-yellow-800 text-xs font-bold px-2 py-1 rounded">Lovable AI</span>
+                            <h4 class="text-xl font-bold">T-World Locations Architecture</h4>
+                            <span class="bg-green-100 text-green-800 text-xs font-bold px-2 py-1 rounded">PHP Generators</span>
                         </div>
-                        <p class="text-gray-600 mb-4">Prototype for condo administration app.</p>
-                        <a href="https://condo.myrecp.com" target="_blank" class="text-blue-600 font-semibold">View Website →</a>
+                        <p class="text-gray-600 mb-4">Developed an efficient system using nested PHP Generators to display territories and offices dynamically.</p>
+                        <a href="https://www.tworld.com/locations" target="_blank" class="text-blue-600 font-semibold hover:underline">View Locations Map →</a>
                     </div>
                 </div>                                
             </div>

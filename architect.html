@@ -6,9 +6,9 @@
     <title>Carlos Gonzalez - Portfolio</title>
     <style>  
         .slide-wrap {
-            width: 95%;
+            /* width: 95%; */
             height: auto;
-            max-width: 1000px;
+         /* max-width: 1000px; */
             border: 1px solid #333;
             background: #fff;
             padding: 5px;
@@ -83,24 +83,23 @@
     </style>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">    
+    <link rel="stylesheet" href="assets/css/hero.css"> 
 </head>
 <body class="bg-gray-50 text-gray-900 font-sans">
     <!-- Navigation -->
     <nav class="bg-white shadow-sm sticky top-0 z-50">
-        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-            <h1 class="text-xl font-bold text-blue-600">
-                <a href="./">Carlos Gonzalez</a>
-            </h1>
-            
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">           
             <!-- Desktop Menu (Hidden on Mobile) -->
             <div class="hidden md:flex space-x-6 items-center">
-                <a href="/#about" class="text-blue-600 px-3 py-1 rounded hover:bg-blue-100 transition font-semibold text-sm">About</a>
-                <a href="/#skills" class="text-blue-600 px-3 py-1 rounded hover:bg-blue-100 transition font-semibold text-sm">Skills</a>
-                <a href="/#projects" class="text-blue-600 px-3 py-1 rounded hover:bg-blue-100 transition font-semibold text-sm">Projects</a>
-                <a href="architect" class="text-blue-600 px-3 py-1 rounded hover:bg-blue-100 transition font-semibold text-sm">
+                <a href="./" class="text-blue-600 px-3 py-1 rounded hover:bg-blue-100 transition font-semibold text-xl">Home</a>
+                <a href="/#about" class="text-blue-600 px-3 py-1 rounded hover:bg-blue-100 transition font-semibold text-xl">About</a>
+                <a href="/#skills" class="text-blue-600 px-3 py-1 rounded hover:bg-blue-100 transition font-semibold text-xl">Skills</a>
+                <a href="/#projects" class="text-blue-600 px-3 py-1 rounded hover:bg-blue-100 transition font-semibold text-xl">Projects</a>
+                <a href="case-study" class="text-blue-600 px-3 py-1 rounded hover:bg-blue-100 transition font-semibold text-xl">Case Study</a>
+                <a href="architect" class="text-blue-600 px-3 py-1 rounded hover:bg-blue-100 transition font-semibold text-xl">
                     Cloud Architect
                 </a>
-                <a href="/solutions" class="text-blue-600 px-3 py-1 rounded hover:bg-blue-100 transition font-semibold text-sm">
+                <a href="/solutions" class="text-blue-600 px-3 py-1 rounded hover:bg-blue-100 transition font-semibold text-xl">
                     Solutions
                 </a>                
             </div>
@@ -115,17 +114,28 @@
 
         <!-- Mobile Menu Dropdown (Hidden by Default) -->
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 px-4 py-4 space-y-4 shadow-lg">
-            <a href="/#about" class="block text-blue-600 px-3 py-1 rounded hover:bg-blue-100 transition font-semibold text-sm font-medium">About</a>
-            <a href="/#skills" class="block text-blue-600 px-3 py-1 rounded hover:bg-blue-100 transition font-semibold text-sm font-medium">Skills</a>
-            <a href="/#projects" class="block text-blue-600 px-3 py-1 rounded hover:bg-blue-100 transition font-semibold text-sm font-medium">Projects</a>
-            <a href="architect"  class="block text-blue-600 px-3 py-1 rounded hover:bg-blue-100 transition font-semibold text-sm font-medium">
+            <a href="./" class="block text-blue-600 px-3 py-1 rounded hover:bg-blue-100 transition font-semibold text-xl font-medium">Home</a>            
+            <a href="/#about" class="block text-blue-600 px-3 py-1 rounded hover:bg-blue-100 transition font-semibold text-xl font-medium">About</a>
+            <a href="/#skills" class="block text-blue-600 px-3 py-1 rounded hover:bg-blue-100 transition font-semibold text-xl font-medium">Skills</a>
+            <a href="/#projects" class="block text-blue-600 px-3 py-1 rounded hover:bg-blue-100 transition font-semibold text-xl font-medium">Projects</a>
+            <a href="case-study" class="block text-blue-600 px-3 py-1 rounded hover:bg-blue-100 transition font-semibold text-xl font-medium">Case Study</a>              
+            <a href="architect"  class="block text-blue-600 px-3 py-1 rounded hover:bg-blue-100 transition font-semibold text-xl font-medium">
                 Cloud Architect
             </a>
-            <a href="/solutions"  class="block text-blue-600 px-3 py-1 rounded hover:bg-blue-100 transition font-semibold text-sm font-medium">
+            <a href="/solutions"  class="block text-blue-600 px-3 py-1 rounded hover:bg-blue-100 transition font-semibold text-xl font-medium">
                 Solutions
             </a>            
         </div>
     </nav>
+    <section class="hero">
+        <div class="hero-banner">
+            <img src="/assets/hero-banner.jpg" alt="Programming code on screen" width="1920" height="512">
+        </div>
+        <div class="hero-content">
+        <h1 class="hero-title">Carlos Gonzalez</h1>
+        <p class="hero-subtitle">Full Stack &amp; AI Developer</p>
+        </div>
+    </section>    
     <div class="max-w-6xl mx-auto px-4 py-20 text-center">
         <div class="slide-wrap" onclick="openModal(this)">
             <img src="/assets/architect/img-01.jpg" alt="Slide 1" loading="lazy">
